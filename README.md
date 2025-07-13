@@ -32,7 +32,19 @@ Build a small React + TypeScript app that fetches and displays the current weath
 - Component design:	Separation of concerns, reusable UI elements
 - UX quality:	Loading/error states, polish under time pressure
 
-📦 Deliverables
+# Deliverables
 Code in GitHub or CodeSandbox
 README with setup instructions + notes if they didn’t finish
+
+# Optional Starter API
+Use the OpenWeatherMap Current Weather API — returns JSON like:
+
+```json
+{
+  "name": "New York",
+  "main": { "temp": 297.15 },
+  "weather": [{ "description": "clear sky", "icon": "01d" }]
+}
+```
+Free tier works without credit card and has fast signup.
 
