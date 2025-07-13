@@ -37,18 +37,7 @@ Code in GitHub or CodeSandbox
 README with setup instructions + notes if they didn’t finish
 
 # Optional Starter API
-Use the [OpenWeatherMap Current Weather](Optional Starter API
-Use the OpenWeatherMap Current Weather API — returns JSON like:
-
-json
-Copy
-Edit
-{
-  "name": "New York",
-  "main": { "temp": 297.15 },
-  "weather": [{ "description": "clear sky", "icon": "01d" }]
-}
-Free tier works without credit card and has fast signup.) API — returns JSON like:
+Use the [OpenWeatherMap Current Weather](https://openweathermap.org/current) API — returns JSON like:
 
 ```json
 {
