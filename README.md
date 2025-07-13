@@ -15,15 +15,32 @@ Build a small React + TypeScript app that fetches and displays the current weath
   - Icon (optional)
 - Handle loading and error states cleanly
 3. TypeScript
-- All data and props should be properly typed
-- Use interfaces for weather response and component props
+- All API responses and props should be strictly typed — no any
+- Prefer interface or type with discriminated unions where relevant
+- Use strict mode if using your own setup
+- API responses must be typed
 4. UX
 - Show a loading indicator while fetching
 - Show user-friendly error message if city is not found or API fails
-5. Stretch (Optional)
+5. Senior-Level Instructions
+In addition to the core, we expect the following from senior candidates:
+- Architecture & State
+  - Use useReducer to manage async state transitions (idle/loading/success/error)
+  - Organize code with logical separation of concerns (e.g., components/, types/, hooks/)
+  - If time allows, abstract weather logic into a custom hook (useWeatherSearch)
+  - Keep components clean and focused — avoid deeply nested state
+- Extensibility
+  - Add a search history feature (last 3 searched cities) via either:
+  - Local state with useReducer OR
+  - A Context-based provider (bonus for clean usage)
+  - Clicking a previous city should re-fetch its weather
+- Testing (Optional but Encouraged)
+  - Add 1–2 unit or integration tests using Jest and React Testing Library
+  - Example: test that weather fetches and displays correctly, or handles an API error
 - Temperature toggle: °C ⇄ °F
 - Cache the last 3 searched cities (in memory or localStorage)
 - Basic responsive layout
+- Basic error boundary or fallback UI
 
 ## What It Tests
 - TypeScript: Custom types, response typing, strict mode discipline
